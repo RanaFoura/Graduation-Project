@@ -89,7 +89,7 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link " href="" >
+                    <a class="nav-link " href="{{ route('profile') }}" >
                     <li>Profile </li>
                     </a>
                 </li>
@@ -102,7 +102,7 @@
 
 
     <!-- Volunteer Navbar -->
-    @role('org')
+    @role('organization')
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -119,8 +119,8 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link " href="" >
-                    <li>Organization </li>
+                    <a class="nav-link " href="{{ route('profile') }}" >
+                    <li> Organization Settings </li>
                     </a>
                 </li>
                 </ul>
@@ -149,7 +149,7 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link " href="" >
+                    <a class="nav-link " href="{{ route('profile') }}" >
                     <li>University Setting </li>
                     </a>
                 </li>

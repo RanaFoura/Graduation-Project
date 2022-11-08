@@ -95,5 +95,17 @@ Route::get('/siteinfo/edit/{id}', [App\Http\Controllers\SitesettingsController::
 Route::put('/siteinfo/update/{id}', [App\Http\Controllers\SitesettingsController::class, 'update'])->name('siteinfo.update');
 
 
+
 });
 //=========================================== /// END route for @role 'admin' ====================================================
+
+
+// //================================================= route for @role 'user' =======================================================
+// Route::group(['middleware'=>'role:volunteer'], function($routes) {
+// });
+
+Route::group(['prefix' => 'user' , 'middleware'=>'auth'], function() {
+    Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
+});
+
+//=========================================== /// END route for @role 'user' ====================================================

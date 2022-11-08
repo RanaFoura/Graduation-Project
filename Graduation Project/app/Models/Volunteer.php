@@ -23,5 +23,9 @@ class Volunteer extends Authenticatable
     ];
    
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
 }
