@@ -1,0 +1,28 @@
+{
+    "name": "icweb/trusty",
+    "description": "User interface for Laratrust",
+    "type": "laravel",
+    "authors": [
+        {
+            "name": "Ian Conway",
+            "email": "laratrust-ui@iacwb.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Icweb\\Trusty\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0.2",
+        "santigarcor/laratrust": "^7.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Icweb\\Trusty\\App\\Providers\\TrustyServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
