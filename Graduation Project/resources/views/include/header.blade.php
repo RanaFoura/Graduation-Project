@@ -145,6 +145,11 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link " href="" >
+                    <li>Pending Requests</li>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="" >
                     <li>My Doctors </li>
                     </a>
                 </li>

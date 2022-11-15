@@ -106,6 +106,14 @@ Route::put('/siteinfo/update/{id}', [App\Http\Controllers\SitesettingsController
 
 Route::group(['prefix' => 'user' , 'middleware'=>'auth'], function() {
     Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
+    Route::get('/profile/edit', [App\Http\Controllers\ProfileController::class, 'edit'])->name('profile.edit');
+    Route::put('/profile/update', [App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+
 });
+
+Route::group(['middleware'=>'role:university'], function($routes) {
+    Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
+});
+
 
 //=========================================== /// END route for @role 'user' ====================================================

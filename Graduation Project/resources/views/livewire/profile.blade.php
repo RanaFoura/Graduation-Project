@@ -37,48 +37,51 @@
                                             <tr>
                                                 <th scope="col">Index</th>
                                                 <th scope="col">Value</th>
-                                                <th scope="col">Edit</th>
+                                                {{-- <th scope="col">Edit</th> --}}
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th scope="row">Name</th>
                                                 <td>{{ $user->name }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Email</th>
                                                 <td>{{ $user->email }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Phone</th>
                                                 <td>{{ $user->phone }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Address</th>
                                                 <td>{{ $user->address }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">University</th>
                                                 <td>{{ $volun->university }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Student ID</th>
                                                 <td>{{ $volun->student_id }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">DOB</th>
                                                 <td>{{ $volun->dob }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                         </tbody>
                                     </table>
                                     <br />
+                                    <div class="text-right">
+                                        <a href="{{ route('profile.edit') }}" class="btn btn-primary"><em class="fa fa-plus"></em> EDIT </a>
+                                    </div>
                                     <br /> <br />
                                     My name is {{ $user->name }} I live in {{ $user->address }} I Joined This website
                                     in {{ $user->created_at }}
@@ -137,43 +140,46 @@
                                             <tr>
                                                 <th scope="col">Index</th>
                                                 <th scope="col">Value</th>
-                                                <th scope="col">Edit</th>
+                                                {{-- <th scope="col">Edit</th> --}}
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th scope="row">Name</th>
                                                 <td>{{ $user->name }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Email</th>
                                                 <td>{{ $user->email }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Phone</th>
                                                 <td>{{ $user->phone }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Address</th>
                                                 <td>{{ $user->address }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Bio</th>
                                                 <td>{{ $org->bio }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
-                                                <th scope="row">Student ID</th>
+                                                <th scope="row">Account Manager</th>
                                                 <td>{{ $org->account_manager }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                         </tbody>
                                     </table>
                                     <br />
+                                    <div class="text-right">
+                                        <a href="{{ route('profile.edit') }}" class="btn btn-primary"><em class="fa fa-plus"></em> EDIT </a>
+                                    </div>
                                     <br /> <br /> <br /><br />
 
                                     <br /> <br /> <br /><br />
@@ -224,43 +230,46 @@
                                             <tr>
                                                 <th scope="col">Index</th>
                                                 <th scope="col">Value</th>
-                                                <th scope="col">Edit</th>
+                                                {{-- <th scope="col">Edit</th> --}}
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th scope="row">Name</th>
                                                 <td>{{ $user->name }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Email</th>
                                                 <td>{{ $user->email }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Phone</th>
                                                 <td>{{ $user->phone }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Address</th>
                                                 <td>{{ $user->address }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
                                                 <th scope="row">Bio</th>
                                                 <td>{{ $uni->bio }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                             <tr>
-                                                <th scope="row">Student ID</th>
+                                                <th scope="row">Account Manager</th>
                                                 <td>{{ $uni->account_manager }}</td>
-                                                <td><a href="#">Edit</a></td>
+                                                {{-- <td><a href="#">Edit</a></td> --}}
                                             </tr>
                                         </tbody>
                                     </table>
                                     <br />
+                                    <div class="text-right">
+                                        <a href="{{ route('profile.edit') }}" class="btn btn-primary"><em class="fa fa-plus"></em> EDIT </a>
+                                    </div>
                                     <br /> <br /> <br /><br />
 
                                     <br /> <br /> <br /><br />
